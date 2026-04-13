@@ -1,0 +1,44 @@
+/* frontend/src/styles/Sidebar.css */
+.sidebar {
+    background-color: #fff;
+    width: 250px;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 5;
+  }
+  .sidebar h2 {
+    font-size: 1.2rem;
+    color: #1a73e8;
+    margin-bottom: 1.5rem;
+  }
+  .sidebar ul {
+    list-style: none;
+  }
+  .sidebar li {
+    margin-bottom: 1rem;
+  }
+  .sidebar a {
+    display: block;
+    padding: 10px 15px;
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .sidebar a:hover {
+    background-color: #1557b0;
+  }
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: static;
+      box-shadow: none;
+    }
+  }

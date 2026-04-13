@@ -1,0 +1,153 @@
+.quiz-section {
+  margin-left: 220px; /* Adjust based on Sidebar width */
+  margin-top: 80px; /* Adjust based on Header height */
+  padding: 40px 20px; /* Increased padding for spacing */
+  min-height: calc(100vh - 160px); /* Ensure content fills viewport minus header/footer */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  max-width: 800px; /* Keep content width constrained */
+  margin-right: auto; /* Center with sidebar offset */
+  box-sizing: border-box;
+}
+
+.quiz-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensure form takes available width */
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  min-height: 100px;
+}
+
+.question-group {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.question-group label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.question-group input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.options-group {
+  margin-top: 10px;
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.option-item input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.option-item select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-question-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.add-question-btn:hover {
+  background: #0056b3;
+}
+
+.submit-btn {
+  background: #28a745;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background: #218838;
+}
+
+.submit-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.progress-bar {
+  width: 100%;
+  background: #e9ecef;
+  border-radius: 4px;
+  margin-top: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #28a745;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  transition: width 0.3s ease;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Ensure footer doesn’t overlap content */
+footer {
+  margin-top: auto; /* Push footer to bottom if in flex container */
+}

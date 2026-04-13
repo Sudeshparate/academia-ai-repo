@@ -1,0 +1,19 @@
+/* frontend/src/styles/Header.css */
+header {
+    background-color: #1a73e8;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+  }
